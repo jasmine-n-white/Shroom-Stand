@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+body {
+    background-color: #0c081b;
+    color: white;
+    font-family: Neucha;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#shoppingCart {
+    margin: 10px;
+    float: right;
+}
+
+#shoppingCart:hover {
+    transform: scale(1.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 50px 50px 50px;
+    padding: 0 10px;
+    font-size: 50px;
+}
+
+main {
+    margin: 50px;
+    padding: 0;    
+}
+
+#cuteShrooms {
+    width: 300px;
+    height: 300px;
+}
+
+
+.product-container {
+    display: grid;
+    grid-template-columns: 75px 300px 300px 300px;
+    grid-template-rows: 350px 350px 350px;
+    row-gap: 100px;
+    column-gap: 40px;
+    justify-content: center;
+    grid-template-areas:
+    "productType-1 product-1 product-2 product-3"
+    "productType-2 product-4 product-5 product-6"
+    "productType-3 product-7 product-8 product-9";
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.pic {
+    width: 275px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 10px 0px 10px;
+}
+
+.product-info {
+    padding: 0px;
+    border-radius: 0px 0px 20px 20px;
+    width: 275px;
+    font-size: 1rem;
+    background-color: #5f7fba;
+    margin: 0px;
+    text-align: center;
+    line-height:1.2;
+
+}
+
+.product-info h2, h3 {
+    line-height: 0.5;
+    padding: 0px 10px 0px 10px;
+}
+
+.product-info p {
+    padding: 0px 5px;
+}
+
+form {
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 15px;  
+}
+
+select {
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #23195d;
+    color: white;
+}
+#productType-1 {
+    grid-area: productType-1;
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+
+#productType-2 {
+    grid-area: productType-2;
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+#productType-3 {
+    grid-area: productType-3;
+    font-size: 30px;
+    justify-self: center;
+    align-self: center;
+}
+
+#product-1 {
+    grid-area: product-1;
+    justify-self: start;
+    align-self: center;
+}
+
+#product-2 {
+    grid-area: product-2;
+    justify-self: start;
+    align-self: center;
+}
+
+#product-3 {
+    grid-area: product-3;
+    justify-self: start;
+    align-self: center;
+}
+
+#product-4 {
+    grid-area: product-4;
+    justify-self: start;
+    align-self: center;
+}
+
+#product-5 {
+    grid-area: product-5;
+    justify-self: start;
+    align-self: center;
+}
+
+#product-6 {
+    grid-area: product-6;
+    justify-self: start;
+    align-self: center;
+}
+
+#product-7 {
+    grid-area: product-7;
+    justify-self: start;
+    align-self: center;
+}
+
+#product-8 {
+    grid-area: product-8;
+    justify-self: start;
+    align-self: center;
+}
+
+#product-9 {
+    grid-area: product-9;
+    justify-self: start;
+    align-self: center;
+}
+
+@media screen and (max-width:1200px) {
+    header{
+        font-size: 30px;
+    }
+
+    .product-container {
+        grid-template-columns: 50px 275px 275px 275px;
+        grid-template-rows: 325px 325px 325px;
+        row-gap: 75px;
+        column-gap: 15px;
+    }
+
+    #productType-1 {
+        font-size: 25px;
+    }
+    
+    #productType-2 {
+        font-size: 25px; 
+    }
+    
+    #productType-3 { 
+        font-size: 25px;   
+    }
+
+    .pic {
+        width: 250px;
+        height: 250px;
+    }
+
+    .product-info {
+        width: 250px;
+        font-size: 75%;
+    }
+
+    form {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+    .product-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 600px 600px 600px 100px 600px 600px 600px 100px 600px 600px 600px;
+        row-gap: 50px;
+        grid-template-areas:
+        "productType-1"
+        "product-1" 
+        "product-2" 
+        "product-3"
+        "productType-2" 
+        "product-4" 
+        "product-5" 
+        "product-6"
+        "productType-3" 
+        "product-7" 
+        "product-8" 
+        "product-9";
+    }
+
+    #shoppingCart {
+        width: 70px;
+        height: 70px;
+    }
+
+    .pic {
+        width: 300px;
+        height: 300px;
+    }
+
+    .product-info {
+        width: 300px;
+        font-size: 1.2rem;
+    }
+
+    #productType-1 {
+        font-size: 50px;
+    }
+
+    #productType-2 {
+        font-size: 50px;
+    }
+    #productType-3 {
+        font-size: 50px;
+    }
+
+    form {
+        font-size: 1.5rem;
+    }
+}
